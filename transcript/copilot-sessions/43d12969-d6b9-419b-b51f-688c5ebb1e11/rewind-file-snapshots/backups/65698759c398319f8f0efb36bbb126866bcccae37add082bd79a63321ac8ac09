@@ -1,0 +1,37 @@
+# Copilot instructions for this repository
+
+## Repository status
+
+This repository is currently effectively empty: there is no application code, package manifest, README, CONTRIBUTING guide, or build/test configuration yet. Future Copilot sessions should treat this as a blank repo until source files are added.
+
+## Build, test, and lint commands
+
+No build, test, or lint commands are defined in this repository at the moment.
+
+Before assuming a stack, check for common project manifests and use the repo's actual tooling instead of guessing:
+
+- Node.js: package.json and npm scripts
+- Python: pyproject.toml, requirements.txt, tox.ini, or pytest
+- Rust: Cargo.toml and cargo test/build
+- Go: go.mod and go test ./...
+- .NET: .sln or .csproj and dotnet test/build
+- Generic: Makefile or other repo-specific scripts
+
+When commands do exist, prefer the project’s documented scripts and run a single test via the ecosystem’s native mechanism rather than the full suite. For example, use the equivalent of one test file or one test name, not a blanket command.
+
+Do not invent commands for a stack that is not present in the repository.
+
+## High-level architecture
+
+There is no implemented application architecture in this repository yet. No services, modules, data models, entrypoints, or deployment boundaries are present.
+
+As source files are introduced, document the real system boundaries here: runtime entrypoints, core packages/modules, data flow, external integrations, and deployment concerns. Until then, preserve the repository as a minimal, clear starting point rather than creating assumptions about the intended architecture.
+
+## Key conventions
+
+- Keep instructions aligned with the repository's actual state; do not assume a framework, language, or package manager that is not present.
+- Prefer minimal, explicit project structure as the first code is added.
+- Before making structural changes, confirm whether the repo is intended to be a single-project layout or a monorepo.
+- Add project-specific conventions here only after they are established by real code or documentation in the repo.
+
+No other AI assistant instruction files or repo docs were found in this checkout, so there are no repo-specific conventions to merge from CLAUDE.md, AGENTS.md, .cursorrules, or similar files yet.

@@ -1,0 +1,61 @@
+# Copilot instructions
+
+## Project overview
+
+This is a static browser implementation of **Last Mark Tic-Tac-Toe**, a
+two-player 3×3 X/O game. The standard three-in-a-row win remains; if all nine
+squares fill without a line, the player making the ninth move wins. The
+variant is documented in `docs/RULES.md`, and the design/proof rationale is in
+`docs/DESIGN.md`.
+
+## Run and verify
+
+There is no build step, backend, database, or network dependency.
+
+Start the game from the repository root:
+
+```sh
+python -m http.server
+```
+
+Then open `http://localhost:8000/` in current Chrome.
+
+Run the exhaustive game-tree proof with:
+
+```sh
+node proof.js
+```
+
+`proof.js` must pass before changing rule behavior. There is no separate lint
+configuration or test runner. For a focused rule check, require `game.js` from
+a small Node script and exercise `createGame`/`applyMove`; do not put DOM setup
+into rule tests.
+
+## Architecture
+
+- `index.html` is the browser entrypoint and loads `game.js` before `ui.js`.
+- `game.js` is the pure rule engine. It owns immutable-style state transitions,
+  legal move validation, win detection, turn changes, and the ninth-move
+  tiebreaker. It must not access `window`, `document`, or DOM elements.
+- `ui.js` is pure DOM wiring. It renders the state returned by `game.js`,
+  handles clicks/reset, and must not duplicate win or turn rules.
+- `proof.js` is a Node-only exhaustive verifier that imports the same
+  `game.js` module; keep it independent of browser APIs.
+- `styles.css` contains presentation only. `docs/` contains the player-facing
+  rules and design decisions.
+
+`game.js` uses a small UMD-style wrapper so the same pure module works as a
+browser global (`TicTacToe`) and as a Node CommonJS module for `proof.js`.
+
+## Repository-specific conventions
+
+- Preserve the no-draw and finite-game guarantees when changing rules. Any
+  new rule must be reflected in both `docs/RULES.md` and `docs/DESIGN.md`.
+- Keep state transitions explicit and return a new state from `applyMove`;
+  callers should not mutate the current board.
+- Use board indexes `0` through `8`, row-major order, consistently across the
+  rule engine, UI, and proof.
+- Keep browser startup dependency-free: use plain HTML/CSS/JavaScript and
+  avoid adding a package manager or build pipeline for UI changes.
+- When adding a rule, update `proof.js` so it exhaustively verifies terminal
+  states and termination using the production rule module.

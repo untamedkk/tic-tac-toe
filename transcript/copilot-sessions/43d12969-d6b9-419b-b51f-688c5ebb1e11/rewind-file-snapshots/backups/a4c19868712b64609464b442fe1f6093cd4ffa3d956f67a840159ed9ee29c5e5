@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Last Mark Tic-Tac-Toe</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <main class="game">
+      <h1>Last Mark Tic-Tac-Toe</h1>
+      <p id="status" aria-live="polite"></p>
+      <div id="board" class="board" role="grid" aria-label="Tic-tac-toe board"></div>
+      <button id="reset" type="button">New game</button>
+      <p class="rule-note">A full board with no three-in-a-row is won by the player who placed the last mark.</p>
+    </main>
+    <script src="game.js"></script>
+    <script src="ui.js"></script>
+  </body>
+</html>

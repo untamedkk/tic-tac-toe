@@ -1,0 +1,244 @@
+{
+  "schema": 1,
+  "snapshots": [
+    {
+      "snapshotId": "3e0ff0bc-8f9c-4888-ac6c-4af736a51761",
+      "eventId": "1a700847-c181-42b3-be5f-4d9f59ff7a07",
+      "userMessage": "/init",
+      "timestamp": "2026-09-21T17:50:05.282Z",
+      "files": {
+        "53eb56b143fbba6bec94c4ef2f4a2c80": {
+          "path": "/Users/krishnagupta/Documents/GitProjects/test-ttt/.github/copilot-instructions.md",
+          "preimage": {
+            "kind": "absent"
+          },
+          "postimage": {
+            "kind": "content",
+            "contentHash": "a6115b3cb23d37c809d24f7deda387ed8801947c9ab0013d2c8883af30a85f9e",
+            "resolvedPath": "/Users/krishnagupta/Documents/GitProjects/test-ttt/.github/copilot-instructions.md",
+            "encodedPath": {
+              "encoding": "unix-bytes",
+              "data": "2f55736572732f6b726973686e6167757074612f446f63756d656e74732f47697450726f6a656374732f746573742d7474742f2e6769746875622f636f70696c6f742d696e737472756374696f6e732e6d64"
+            }
+          },
+          "linesAdded": 48,
+          "linesRemoved": 0
+        }
+      },
+      "backupFiles": [],
+      "fileCount": 1,
+      "linesAdded": 48,
+      "linesRemoved": 0
+    },
+    {
+      "snapshotId": "64c5ddf6-b704-4af1-99b8-2f0236b82c38",
+      "eventId": "036d1b1e-a321-45f2-8dbf-4be9df6c0e93",
+      "userMessage": "I am attaching a candidate brief PDF file based on that update copilot-instruction.md and create AGENT.md\n\n[file: AI Dev Test - Candidate brief.pdf]",
+      "timestamp": "2026-09-21T17:57:38.100Z",
+      "files": {
+        "8060bbe83f4e90f4a73e0e208fb4a512": {
+          "path": "/Users/krishnagupta/Documents/GitProjects/test-ttt/index.html",
+          "preimage": {
+            "kind": "absent"
+          },
+          "postimage": {
+            "kind": "content",
+            "contentHash": "ad685843e5a170d4426df5309c7169300a29be3a574fea5f445e4041a3fd8d40",
+            "resolvedPath": "/Users/krishnagupta/Documents/GitProjects/test-ttt/index.html",
+            "encodedPath": {
+              "encoding": "unix-bytes",
+              "data": "2f55736572732f6b726973686e6167757074612f446f63756d656e74732f47697450726f6a656374732f746573742d7474742f696e6465782e68746d6c"
+            }
+          },
+          "linesAdded": 32,
+          "linesRemoved": 0
+        },
+        "7f61c78959e096701d9bd0a17dbe4ac7": {
+          "path": "/Users/krishnagupta/Documents/GitProjects/test-ttt/styles.css",
+          "preimage": {
+            "kind": "absent"
+          },
+          "postimage": {
+            "kind": "content",
+            "contentHash": "26e871752a258970186900ed05b66e79689823db781c1a97ff01e66068606c79",
+            "resolvedPath": "/Users/krishnagupta/Documents/GitProjects/test-ttt/styles.css",
+            "encodedPath": {
+              "encoding": "unix-bytes",
+              "data": "2f55736572732f6b726973686e6167757074612f446f63756d656e74732f47697450726f6a656374732f746573742d7474742f7374796c65732e637373"
+            }
+          },
+          "linesAdded": 107,
+          "linesRemoved": 0
+        },
+        "a2789806b2e55cf93f51c1602124227c": {
+          "path": "/Users/krishnagupta/Documents/GitProjects/test-ttt/script.js",
+          "preimage": {
+            "kind": "absent"
+          },
+          "postimage": {
+            "kind": "content",
+            "contentHash": "cfa0146a838e08689ad9879d3921dfd41b814b4901307357682d6f458b43ab9d",
+            "resolvedPath": "/Users/krishnagupta/Documents/GitProjects/test-ttt/script.js",
+            "encodedPath": {
+              "encoding": "unix-bytes",
+              "data": "2f55736572732f6b726973686e6167757074612f446f63756d656e74732f47697450726f6a656374732f746573742d7474742f7363726970742e6a73"
+            }
+          },
+          "linesAdded": 93,
+          "linesRemoved": 0
+        },
+        "24cb3f20ba65f16f1bf26dbd466943d5": {
+          "path": "/Users/krishnagupta/Documents/GitProjects/test-ttt/docs/RULES.md",
+          "preimage": {
+            "kind": "absent"
+          },
+          "postimage": {
+            "kind": "content",
+            "contentHash": "132680344bde6c1c987d4ca1766a33c25f6a0a6be4cd8be32f2fa8333b7a11b6",
+            "resolvedPath": "/Users/krishnagupta/Documents/GitProjects/test-ttt/docs/RULES.md",
+            "encodedPath": {
+              "encoding": "unix-bytes",
+              "data": "2f55736572732f6b726973686e6167757074612f446f63756d656e74732f47697450726f6a656374732f746573742d7474742f646f63732f52554c45532e6d64"
+            }
+          },
+          "linesAdded": 12,
+          "linesRemoved": 0
+        },
+        "174dab18213473eda8de659298749858": {
+          "path": "/Users/krishnagupta/Documents/GitProjects/test-ttt/docs/DESIGN.md",
+          "preimage": {
+            "kind": "absent"
+          },
+          "postimage": {
+            "kind": "content",
+            "contentHash": "c3014ecac519e14ea6568160360061ec36dab8f167d2ad23eed88d188a472745",
+            "resolvedPath": "/Users/krishnagupta/Documents/GitProjects/test-ttt/docs/DESIGN.md",
+            "encodedPath": {
+              "encoding": "unix-bytes",
+              "data": "2f55736572732f6b726973686e6167757074612f446f63756d656e74732f47697450726f6a656374732f746573742d7474742f646f63732f44455349474e2e6d64"
+            }
+          },
+          "linesAdded": 40,
+          "linesRemoved": 0
+        },
+        "b6b7574912ba83800ebc5601753ddb7d": {
+          "path": "/Users/krishnagupta/Documents/GitProjects/test-ttt/transcript/README.md",
+          "preimage": {
+            "kind": "absent"
+          },
+          "postimage": {
+            "kind": "content",
+            "contentHash": "0137a3b104e9976db73bc69659dc6b6f3fc69591380b02a857e00f6191971b59",
+            "resolvedPath": "/Users/krishnagupta/Documents/GitProjects/test-ttt/transcript/README.md",
+            "encodedPath": {
+              "encoding": "unix-bytes",
+              "data": "2f55736572732f6b726973686e6167757074612f446f63756d656e74732f47697450726f6a656374732f746573742d7474742f7472616e7363726970742f524541444d452e6d64"
+            }
+          },
+          "linesAdded": 20,
+          "linesRemoved": 0
+        },
+        "8e6d0a1b43ccdb4e4e1a550e30502d68": {
+          "path": "/Users/krishnagupta/Documents/GitProjects/test-ttt/transcript/ai-worklog.json",
+          "preimage": {
+            "kind": "absent"
+          },
+          "postimage": {
+            "kind": "content",
+            "contentHash": "306390ffc04cf6cb635015b0825cd41b32d96a2477044271b3fe5e6e2406dfa6",
+            "resolvedPath": "/Users/krishnagupta/Documents/GitProjects/test-ttt/transcript/ai-worklog.json",
+            "encodedPath": {
+              "encoding": "unix-bytes",
+              "data": "2f55736572732f6b726973686e6167757074612f446f63756d656e74732f47697450726f6a656374732f746573742d7474742f7472616e7363726970742f61692d776f726b6c6f672e6a736f6e"
+            }
+          },
+          "linesAdded": 37,
+          "linesRemoved": 0
+        },
+        "938c4122c39172245119a35716839eec": {
+          "path": "/Users/krishnagupta/Documents/GitProjects/test-ttt/AGENT.md",
+          "preimage": {
+            "kind": "absent"
+          },
+          "postimage": {
+            "kind": "content",
+            "contentHash": "d5c1c230cf7a3a2693e75948784b322deb82f6823adc787153e0f0371ac59991",
+            "resolvedPath": "/Users/krishnagupta/Documents/GitProjects/test-ttt/AGENT.md",
+            "encodedPath": {
+              "encoding": "unix-bytes",
+              "data": "2f55736572732f6b726973686e6167757074612f446f63756d656e74732f47697450726f6a656374732f746573742d7474742f4147454e542e6d64"
+            }
+          },
+          "linesAdded": 50,
+          "linesRemoved": 0
+        },
+        "6359a5716fcd256b39e4a89fba68b9dd": {
+          "path": "/Users/krishnagupta/Documents/GitProjects/test-ttt/AGENTS.md",
+          "preimage": {
+            "kind": "absent"
+          },
+          "postimage": {
+            "kind": "content",
+            "contentHash": "946e606933f8de5bc7022728033beacf81aee31de4096982b301a6a06013ef06",
+            "resolvedPath": "/Users/krishnagupta/Documents/GitProjects/test-ttt/AGENTS.md",
+            "encodedPath": {
+              "encoding": "unix-bytes",
+              "data": "2f55736572732f6b726973686e6167757074612f446f63756d656e74732f47697450726f6a656374732f746573742d7474742f4147454e54532e6d64"
+            }
+          },
+          "linesAdded": 28,
+          "linesRemoved": 0
+        },
+        "53eb56b143fbba6bec94c4ef2f4a2c80": {
+          "path": "/Users/krishnagupta/Documents/GitProjects/test-ttt/.github/copilot-instructions.md",
+          "preimage": {
+            "kind": "content",
+            "contentHash": "a6115b3cb23d37c809d24f7deda387ed8801947c9ab0013d2c8883af30a85f9e",
+            "backupFile": "a6115b3cb23d37c809d24f7deda387ed8801947c9ab0013d2c8883af30a85f9e",
+            "mode": 33188,
+            "size": 2747,
+            "resolvedPath": "/Users/krishnagupta/Documents/GitProjects/test-ttt/.github/copilot-instructions.md",
+            "encodedPath": {
+              "encoding": "unix-bytes",
+              "data": "2f55736572732f6b726973686e6167757074612f446f63756d656e74732f47697450726f6a656374732f746573742d7474742f2e6769746875622f636f70696c6f742d696e737472756374696f6e732e6d64"
+            }
+          },
+          "postimage": {
+            "kind": "content",
+            "contentHash": "c50b644cce375e87fda8b58e4e710b5b885d39e1a5013c49c2bde663523ebd5b",
+            "resolvedPath": "/Users/krishnagupta/Documents/GitProjects/test-ttt/.github/copilot-instructions.md",
+            "encodedPath": {
+              "encoding": "unix-bytes",
+              "data": "2f55736572732f6b726973686e6167757074612f446f63756d656e74732f47697450726f6a656374732f746573742d7474742f2e6769746875622f636f70696c6f742d696e737472756374696f6e732e6d64"
+            }
+          },
+          "linesAdded": 30,
+          "linesRemoved": 35
+        },
+        "a08bc9c4a0b03c02e168a52500ff15d1": {
+          "path": "/tmp/testtt-http.log",
+          "preimage": {
+            "kind": "absent"
+          },
+          "postimage": {
+            "kind": "content",
+            "contentHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "resolvedPath": "/private/tmp/testtt-http.log",
+            "encodedPath": {
+              "encoding": "unix-bytes",
+              "data": "2f707269766174652f746d702f7465737474742d687474702e6c6f67"
+            }
+          },
+          "linesAdded": 6,
+          "linesRemoved": 0
+        }
+      },
+      "backupFiles": [
+        "a6115b3cb23d37c809d24f7deda387ed8801947c9ab0013d2c8883af30a85f9e"
+      ],
+      "fileCount": 11,
+      "linesAdded": 455,
+      "linesRemoved": 35
+    }
+  ]
+}

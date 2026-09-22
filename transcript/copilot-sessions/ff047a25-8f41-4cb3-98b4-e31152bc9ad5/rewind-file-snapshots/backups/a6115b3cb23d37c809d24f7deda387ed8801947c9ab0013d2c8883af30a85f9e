@@ -1,0 +1,48 @@
+# Copilot Instructions
+
+## Repository status
+This repository currently appears to be a minimal scaffold rather than a full application. There are no application source files, package manifests, or configured build/test tooling in the checked-in tree. The existing structure is intentionally lightweight:
+
+- `docs/`: project documentation and design notes
+- `scripts/`: helper or automation scripts
+- `transcript/`: generated transcripts or other artifact output
+
+Treat this as an early-stage repo: keep it organized and explicit, and update these instructions as the project grows.
+
+## Build, test, and lint commands
+No build, test, or lint commands are configured in the repository right now.
+
+- No `package.json`, `pyproject.toml`, `Cargo.toml`, `go.mod`, `Makefile`, or similar project manifest was found.
+- Do not invent framework-specific commands for a stack that is not present.
+- When a real stack is introduced, add the exact repo-local commands here and prefer project scripts over one-off shell commands.
+
+If a language/runtime is added later, the expected pattern is:
+
+- use the canonical project command (for example `npm test`, `pytest`, `cargo test`, or a `make` target)
+- document the single-test or focused validation path alongside the full suite
+- keep linting and formatting steps aligned with the project's manifest
+
+## High-level architecture
+At present, there is no application implementation to describe beyond the repo layout.
+
+The architecture principle for this repository is intentionally simple:
+
+- keep documentation separate from executable code in `docs/`
+- keep automation in `scripts/` rather than mixing helper logic into app files
+- keep generated or transcript artifacts in `transcript/` so source and output remain distinct
+
+As the project grows, prefer a single clear stack and a small number of top-level directories; avoid scattering related functionality across multiple ad hoc folders.
+
+## Key conventions
+- Preserve the current minimal structure; do not add extra top-level folders unless there is a clear project need.
+- Keep new files scoped to a single responsibility and avoid catch-all modules.
+- Prefer explicit, small scripts with predictable inputs/outputs instead of hidden side effects.
+- When introducing tooling, align it with the actual stack and document the commands here.
+- Keep generated artifacts, transcripts, and temporary outputs out of source directories unless they are intentionally versioned.
+
+## Notes for future changes
+This file should evolve with the repository. Once the project adds code, update it to include:
+
+- the actual build/test/lint commands
+- the authoritative runtime layout and entry points
+- project-specific conventions that matter to future Copilot sessions
