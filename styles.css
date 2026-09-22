@@ -1,0 +1,74 @@
+:root {
+  color: #172033;
+  background: #f3f5f8;
+  font-family: system-ui, sans-serif;
+}
+
+body {
+  display: grid;
+  min-height: 100vh;
+  margin: 0;
+  place-items: center;
+}
+
+.game {
+  width: min(92vw, 420px);
+  padding: 2rem;
+  text-align: center;
+  background: #fff;
+  border-radius: 1rem;
+  box-shadow: 0 0.75rem 2rem #1720331a;
+}
+
+h1 {
+  margin-top: 0;
+}
+
+#status {
+  min-height: 1.5em;
+  font-weight: 700;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.5rem;
+  margin: 1.5rem 0;
+}
+
+.cell {
+  aspect-ratio: 1;
+  border: 0.15rem solid #ccd3df;
+  border-radius: 0.5rem;
+  color: #172033;
+  background: #f8fafc;
+  font-size: clamp(2.5rem, 15vw, 5rem);
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.cell:hover:not(:disabled),
+.cell:focus-visible {
+  border-color: #536dfe;
+  outline: 0.2rem solid #536dfe55;
+}
+
+.cell:disabled {
+  cursor: default;
+}
+
+button#reset {
+  padding: 0.65rem 1rem;
+  border: 0;
+  border-radius: 0.4rem;
+  color: #fff;
+  background: #536dfe;
+  font: inherit;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.rule-note {
+  color: #5c6575;
+  font-size: 0.9rem;
+}
