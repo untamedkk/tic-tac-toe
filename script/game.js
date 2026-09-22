@@ -31,6 +31,18 @@
     });
   }
 
+  function threatCount(board, player) {
+    return LINES.filter(function (line) {
+      var playerMarks = line.filter(function (index) {
+        return board[index] === player;
+      }).length;
+      var opponentMarks = line.filter(function (index) {
+        return board[index] !== null && board[index] !== player;
+      }).length;
+      return playerMarks === 2 && opponentMarks === 1;
+    }).length;
+  }
+
   function applyMove(state, index) {
     if (state.over) {
       throw new Error("The game is over.");
@@ -49,11 +61,20 @@
     var won = winningLine(board, player);
     var fullBoard = moveCount === 9;
     var over = won || fullBoard;
+    var winner = won ? player : null;
+
+    if (fullBoard && !won) {
+      var xThreats = threatCount(board, "X");
+      var oThreats = threatCount(board, "O");
+      winner = xThreats === oThreats
+        ? player
+        : (xThreats > oThreats ? "X" : "O");
+    }
 
     return {
       board: board,
       currentPlayer: over ? null : (player === "X" ? "O" : "X"),
-      winner: over ? player : null,
+      winner: winner,
       over: over,
       moveCount: moveCount
     };
@@ -69,6 +90,7 @@
     createGame: createGame,
     applyMove: applyMove,
     getLines: getLines,
+    threatCount: threatCount,
     winningLine: winningLine
   };
 }));

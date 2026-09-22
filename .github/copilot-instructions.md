@@ -4,7 +4,8 @@
 
 This is a static browser implementation of **Last Mark Tic-Tac-Toe**, a
 two-player 3×3 X/O game. The standard three-in-a-row win remains; if all nine
-squares fill without a line, the player making the ninth move wins. The
+squares fill without a line, the player with more completed two-mark threat
+lines wins, with the ninth mover resolving ties. The
 variant is documented in `docs/RULES.md`, and the design/proof rationale is in
 `docs/DESIGN.md`.
 
@@ -31,18 +32,27 @@ lint configuration or test runner. For a focused rule check, require
 `script/game.js` from a small Node script and exercise
 `createGame`/`applyMove`; do not put DOM setup into rule tests.
 
+Run the concrete attempted-draw case with:
+
+```sh
+node script/no-draw-case.js
+```
+
 ## Architecture
 
 - `index.html` is the browser entrypoint and loads `script/game.js` before
   `script/ui.js`.
 - `script/game.js` is the pure rule engine. It owns immutable-style state transitions,
-  legal move validation, win detection, turn changes, and the ninth-move
-  tiebreaker. It must not access `window`, `document`, or DOM elements.
+  legal move validation, win detection, threat scoring, turn changes, and the
+  finite full-board tiebreaker. It must not access `window`, `document`, or DOM
+  elements.
 - `script/ui.js` is pure DOM wiring. It renders the state returned by
   `script/game.js`,
   handles clicks/reset, and must not duplicate win or turn rules.
 - `script/proof.js` is a Node-only exhaustive verifier that imports the same
   `script/game.js` module; keep it independent of browser APIs.
+- `script/no-draw-case.js` is a standalone regression case showing that a full
+  board with no line is scored by threat count instead of ending in a draw.
 - `styles.css` contains presentation only. `docs/` contains the player-facing
   rules and design decisions.
 
