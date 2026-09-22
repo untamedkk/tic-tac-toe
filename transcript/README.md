@@ -16,14 +16,12 @@ record is `events.jsonl`; `workspace.yaml` holds session metadata.
 
 | Session ID | Started (HK) | events.jsonl size | Role |
 |---|---|---|---|
-| `ff047a25-8f41-4cb3-98b4-e31152bc9ad5` | 22 Sep 01:48 | ~1.0 MB | First build attempt (initial rules + docs) |
-| `82eaf796-d5b4-46fd-aea4-cface9c1798d` | 22 Sep 01:47 | ~1.2 KB | Aborted/empty session (no useful content) |
-| `43d12969-d6b9-419b-b51f-688c5ebb1e11` | 22 Sep 16:24 | ~1.7 MB | Main session: config, variant decision, engine, proof, docs |
+| `ff047a25-8f41-4cb3-98b4-e31152bc9ad5` | 22 Sep 01:48 | ~1.0 MB | Setup session: brief intake; created `.github/copilot-instructions.md` and `AGENTS.md` |
+| `82eaf796-d5b4-46fd-aea4-cface9c1798d` | 22 Sep 01:47 | ~1.2 KB | Session opened but no messages exchanged |
+| `43d12969-d6b9-419b-b51f-688c5ebb1e11` | 22 Sep 16:24 | ~1.7 MB | Main session: rules engine, exhaustive proof, docs, refactors |
 
-All three are included, including the tiny abandoned one, per the brief.
-
-> Phase mapping is by timestamp and size; the exact prompt-to-phase boundary is
-> visible inside each `events.jsonl`.
+Every session recorded for this workspace is included; each `events.jsonl`
+shows its prompts and phases in full.
 
 ## Configuration files that shaped behaviour
 
