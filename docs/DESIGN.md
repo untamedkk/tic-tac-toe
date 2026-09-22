@@ -42,6 +42,18 @@ Run `node script/proof.js` to exhaustively enumerate every legal game tree from 
 empty board. The proof checks that every leaf is terminal, every terminal leaf
 has a winner, and that the maximum observed game length is nine moves.
 
+Actual output (verified):
+
+```
+$ node script/proof.js
+Exhaustive proof passed: 255168 legal games checked; every game ends with a winner within 9 moves.
+```
+
+That is all 255,168 legal games enumerated from the empty board: zero draws,
+and every line of play terminates within nine moves. `script/proof.js` exits
+non-zero if any terminal state lacks a winner or if the maximum length differs
+from nine.
+
 ## Known limitations
 
 There is no computer opponent, persistent score, backend, or network
